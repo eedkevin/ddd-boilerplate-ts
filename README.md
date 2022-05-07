@@ -29,36 +29,36 @@ A Typescript web service follows Domain Driven Design that includes BDD, Unit Te
 1. install dependencies
 
 ```sh
-yarn install
+$ yarn install
 ```
 
 2. lift up the server in dev mode
 
 ```sh
-yarn dev
+$ yarn dev
 ```
 
 ## Test & Coverage
 ### Unit test
 
 ```sh
-yarn test:unit
+$ yarn test:unit
 ```
 
 ### E2E test
 
 ```sh
-yarn test:e2e
+$ yarn test:e2e
 ```
 
 ### Stress test
 
 ```sh
-yarn test:stress
+$ yarn test:stress
 ```
 
 ### Test coverage
 
 ```sh
-yarn test:coverage
+$ yarn test:coverage
 ```
