@@ -1,0 +1,6 @@
+scenarios:
+  - name: order get
+    flow:
+    - post:
+        url: "/api/graphql"
+        json: {"query":"query {getOrder(id: 12) {id,uuid}}"}

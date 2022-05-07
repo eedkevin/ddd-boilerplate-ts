@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    restart: on-failure
+    networks:
+      - app-network
+    ports:
+      - 3000:3000
+  
+  redis-cluster:
+    image: grokzen/redis-cluster:6.2.0
+    restart: on-failure
+    networks:
+      - app-network
+    ports:
+      - 7000:7000
+      - 7001:7001
+      - 7002:7002
+    environment:
+      CLUSTER_ONLY: "true"
+      IP: 0.0.0.0
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,6 @@
+scenarios:
+  - name: order clone
+    flow:
+    - post:
+        url: "/api/rest/order/clone"
+        json: {id: "{{ order_id }}"}

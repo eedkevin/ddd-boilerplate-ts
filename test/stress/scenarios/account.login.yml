@@ -1,0 +1,6 @@
+scenarios:
+  - name: account login
+    flow:
+    - post:
+        url: "/api/rest/account/login"
+        json: {id: "{{ user_id }}"}
